@@ -1,0 +1,8 @@
+#surefire
+#Sun Aug 07 20:18:03 BST 2016
+maven.ext.class.path=C\:\\Program Files (x86)\\NetBeans 8.1\\java\\maven-nblib\\netbeans-eventspy.jar
+user.dir=D\:\\JavaProjects\\FenderQAChallenge
+file.encoding=UTF-8
+localRepository=C\:\\Users\\jose.mascaro\\.m2\\repository
+basedir=D\:\\JavaProjects\\FenderQAChallenge
+test=CucumberTests.RunCucumberTests
