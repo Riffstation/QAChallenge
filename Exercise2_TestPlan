@@ -1,0 +1,28 @@
+
+I assume that the navigation bar (Products, Customize…) as is common to all pages and is tested separately from this specific electric guitar page, 
+I would test at a high level:
+1.	The breadcrum, guitar name on it and behaviour is correct, so if I click in another step it would go to the expected page.
+2.	I will check that the facebook, twitter and share in other social apps are working as expected.
+3.	I will check (in this case  8 combinations) that all the guitar setups setting ‘Color’ and ‘FingerBoard material’ updates the model with the expected reference and the image of the guitar with the expected one, also that the thumbnails are updated.
+4.	I will check that if I click in a thumbnail I the expected image is shown and that if I click next and previous thumbnails buttons are
+5.	Add to cart button is available and is functional so if I click on it the view cart counter is increased.
+6.	Play one button shows the expected popup (I would test the functionality of that pop up, zip code and use my locations behaviours and results).
+7.	I will check that the view cart summary is correct (chosen model of guitar, price and quantity)
+8.	I will check that the taps Highlights, Specs and Support are working setting visible the expected elements and links for each one.
+9.	I will check that into Recommended Gear that the previous and next buttons are working correctly showing the expected images and products.
+
+That is basically what I would like to test of the page, some of this points should be split as it contains several features include on them.
+
+Finally although we may have to to test this in the page, I would like to add that about the point 5, the button functionality I think that will need also an API testing and not only the UI testing(if it is not done), in this case this is the call for add the guitar to the cart, 
+
+http://shop.fender.com/on/demandware.store/Sites-Fender-Site/en_US/Cart-AddProduct?format=ajax
+
+And that are the parameters 
+Quantity:1
+productName:American Elite Stratocaster® HSS Shawbucker
+productCategory:electric-guitars-stratocaster
+uuid:
+cartAction:update
+pid:0114110700
+
+So would be good to do this call with a non existing Pid, with a non valid one, with a product id of a guitar which is not in stock…
